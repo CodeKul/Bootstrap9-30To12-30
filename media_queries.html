@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Media Queries</title>
+    <style>
+        .media {
+            background-color: aqua;
+            color: darkblue;
+            font-size: 28px;
+            padding:15px;
+        }
+
+        @media (max-width:575px) {
+            .media {
+                background-color: darkblue;
+                color: white;
+                font-size: 16px;
+                padding:15px;
+            }
+        }
+        @media (min-width:576px) and (max-width:768px) {
+            .media {
+                background-color: darkmagenta;
+                color: white;
+                font-size: 18px;
+                padding:20px;
+            }
+        }
+        @media (min-width:769px) and (max-width:992px) {
+            .media {
+                background-color: darkorange;
+                color: darkblue;
+                font-size: 20px;
+                padding:25px;
+            }
+        }
+        @media (min-width:993px) and (max-width:1200px) {
+            .media {
+                background-color: darkgreen;
+                color: white;
+                font-size: 22px;
+                padding:30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="media">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nihil quis dolor veritatis aut quos totam atque sint voluptate, consequuntur officia, excepturi incidunt, qui minus nostrum? Fuga culpa ducimus adipisci explicabo commodi itaque eveniet dolor accusamus quod ipsam. Illum perspiciatis repellat dolore iste, deleniti inventore amet quisquam quia eos omnis.
+    </div>
+</body>
+
+</html>
