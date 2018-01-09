@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <form>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="">First name</label>
+                <input type="text" class="form-control is-valid" id="" placeholder="First name" value="Mark" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">Last name</label>
+                <input type="text" class="form-control is-valid" id="" placeholder="Last name" value="Otto" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="">@</span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationServer03">City</label>
+                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationServer04">State</label>
+                <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+                <div class="invalid-feedback">
+                    Please provide a valid state.
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationServer05">Zip</label>
+                <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+</body>
+
+</html>
